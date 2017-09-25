@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "api\api.csproj", "{77308037-468D-4CD6-88E7-FEB29DEFF2D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsApi", "StarWarsApi\StarWarsApi.csproj", "{1FF01BB0-6FAF-4AF8-B7D1-BD18FB7978C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web", "web\web.csproj", "{55BB2AE5-9F99-4933-AC04-399E366473E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForceWeb", "ForceWeb\ForceWeb.csproj", "{B0E6E4F4-9479-4633-8C02-0C7045743AA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77308037-468D-4CD6-88E7-FEB29DEFF2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77308037-468D-4CD6-88E7-FEB29DEFF2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77308037-468D-4CD6-88E7-FEB29DEFF2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77308037-468D-4CD6-88E7-FEB29DEFF2D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55BB2AE5-9F99-4933-AC04-399E366473E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55BB2AE5-9F99-4933-AC04-399E366473E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55BB2AE5-9F99-4933-AC04-399E366473E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55BB2AE5-9F99-4933-AC04-399E366473E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF01BB0-6FAF-4AF8-B7D1-BD18FB7978C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF01BB0-6FAF-4AF8-B7D1-BD18FB7978C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF01BB0-6FAF-4AF8-B7D1-BD18FB7978C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF01BB0-6FAF-4AF8-B7D1-BD18FB7978C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E6E4F4-9479-4633-8C02-0C7045743AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E6E4F4-9479-4633-8C02-0C7045743AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E6E4F4-9479-4633-8C02-0C7045743AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E6E4F4-9479-4633-8C02-0C7045743AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
