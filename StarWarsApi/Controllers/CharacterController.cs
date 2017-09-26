@@ -4,7 +4,6 @@ using System.Web.Http;
 
 namespace StarWarsApi.Controllers
 {
-    [AiHandleError]
     public class CharacterController : ApiController
     {
         (int id, string name, int home, string allegiance)[] characters = {

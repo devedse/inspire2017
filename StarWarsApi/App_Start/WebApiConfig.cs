@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using StarWarsApi.ErrorHandler;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
 
 namespace StarWarsApi
 {
@@ -19,6 +18,8 @@ namespace StarWarsApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Services.Replace(typeof(IExceptionLogger), new AiExceptionLogger());
         }
     }
 }

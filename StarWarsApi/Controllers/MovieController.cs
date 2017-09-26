@@ -4,32 +4,30 @@ using System.Web.Http;
 
 namespace api.Controllers
 {
-    [AiHandleError]
+    public struct Movie
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+    }
+
     public class MovieController : ApiController
     {
-        (int id, string title)[] films = {
-            (1, "The Phantom Menace"),
-            (2, "Attack of the Clones"),
-            (3, "Revenge of the Sith"),
-            (4, "A New Hope"),
-            (5, "Empire Strikes Back"),
-            (6, "Revenge of the Jedi"),
-            (7, "The Force Awakens"),
-            (8, "The Last Jedi"),
-            //(9, "TBA"),
-            (10, "Rogue One")
+        Movie[] movies = {
+            new Movie{ Id = 1, Title = "The Phantom Menace" },
+            new Movie{ Id = 2, Title = "Attack of the Clones" },
+            new Movie{ Id = 3, Title = "Revenge of the Sith" },
+            new Movie{ Id = 4, Title = "A New Hope" },
+            new Movie{ Id = 5, Title = "The Empire Strikes Back" },
+            new Movie{ Id = 6, Title = "Return of the Jedi" },
+            new Movie{ Id = 7, Title = "The Force Awakens" },
+            new Movie{ Id = 8, Title = "The Last Jedi" },
+            //new Movie{ Id = 9, Title = "TBA" },
+            new Movie{ Id = 10, Title = "Rogue One" }
         };
 
-        [HttpGet]
-        public (int id, string title)[] Get()
+        public Movie Get(int id)
         {
-            return films;
-        }
-
-        [HttpGet]
-        public (int id, string title) Get(int id)
-        {
-            return films.Where(f => f.id == id).Single();
+            return movies.Where(f => f.Id == id).Single();
         }
     }
 }
