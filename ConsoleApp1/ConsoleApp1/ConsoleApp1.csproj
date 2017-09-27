@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <StartupObject>ConsoleApp1.Program</StartupObject>
+    <Company>Avanade</Company>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Compressor\Compressor.csproj" />
+  </ItemGroup>
+
+</Project>
